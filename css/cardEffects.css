@@ -6,7 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100%;
+  width: 325px;
   height: 300px;
  
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -40,4 +40,148 @@
 .box:hover::after {
     opacity: 1;
 	
+}
+
+.boxAF {
+  position: relative;
+  display: inline-block;
+  background-image: url("../images/GraphicsSq.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 325px;
+  height: 300px;
+ 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.boxAF::after {
+  content: "";
+  border-radius: 0px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  
+}
+
+.boxAF:hover {
+  -webkit-transform: scale(1.10, 1.10);
+  transform: scale(1.10, 1.10);
+	
+}
+
+.boxAF:hover::after {
+    opacity: 1;
+	
+}
+
+.boxPS {
+  position: relative;
+  display: inline-block;
+  background-image: url("../images/PSSq.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 325px;
+  height: 300px;
+ 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.boxPS::after {
+  content: "";
+  border-radius: 0px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  
+}
+
+.boxPS:hover {
+  -webkit-transform: scale(1.10, 1.10);
+  transform: scale(1.10, 1.10);
+	
+}
+
+.boxPS:hover::after {
+    opacity: 1;
+	
+}
+	
+
+
+.boxWeb {
+  position: relative;
+  display: inline-block;
+  background-image: url("../images/WebSq.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 98%;
+  height: 300px;
+ 
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.boxWeb::after {
+  content: "";
+  border-radius: 0px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  
+}
+
+.boxWeb:hover {
+  -webkit-transform: scale(1.10, 1.10);
+  transform: scale(1.10, 1.10);
+	
+}
+
+.boxWeb:hover::after {
+    opacity: 1;
+	
+}
+@media screen and (max-width: 1200px) {
+.boxPS, .boxAF, .box {
+  background-size: 110%;
+  width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 768px) {
+.boxWeb, .boxPS, .boxAF, .box {
+  width: 325px;
+}
 }
